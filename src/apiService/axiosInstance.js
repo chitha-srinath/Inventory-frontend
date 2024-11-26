@@ -9,8 +9,7 @@ axios.defaults.withCredentials = true;
 const axiosInstance = axios.create({
   // baseURL: "http://localhost:5080/api/",
   baseURL:
-    import.meta.env.VITE_SERVER_API_URL ||
-    "https://inventory-backend-9zmf.onrender.com/api/",
+    import.meta.env.VITE_SERVER_API_URL,
   timeout: 10000, // Set a timeout for requests
 });
 
